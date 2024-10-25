@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 
 import SideBar from '@/components/sidebar';
+import TopBar from '@/components/TopBar';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -37,7 +38,10 @@ export default function RootLayout({
       >
         <div className='max-w-[1440px] mx-auto bg-main-gradient flex'>
           <SideBar />
-          {children}
+          <div className='w-full pl-[24px] pt-[22px] pr-[35px] flex flex-col'>
+            <TopBar />
+            {children}
+          </div>
         </div>
       </body>
     </html>

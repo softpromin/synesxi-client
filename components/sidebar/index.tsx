@@ -5,7 +5,7 @@ import MenuItem from './MenuItem';
 
 const SideBar = () => {
   return (
-    <div className='w-[216px] h-[826px] flex flex-col bg-main-gradient border-r border-r-[#DCDEE033]'>
+    <div className='max-w-[216px] w-full h-[826px] flex flex-col bg-main-gradient border-r border-r-[#DCDEE033]'>
       <div className='h-[154px] flex items-center justify-center'>
         <Link href='/'>
           <Image
