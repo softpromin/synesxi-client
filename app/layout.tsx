@@ -16,7 +16,7 @@ export default function RootLayout({
   const pathname = usePathname();
 
   const getContent = () => {
-    let modals = ['/login', '/register'];
+    const modals = ['/login', '/register'];
     if (modals.includes(pathname)) {
       return (
         <div className='w-full h-screen flex items-center justify-center bg-gradient-to-bl from-[#242051] to-[#11151c]'>
