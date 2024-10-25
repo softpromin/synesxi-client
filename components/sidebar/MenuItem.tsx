@@ -16,7 +16,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ target, caption }) => {
 
   return (
     <div className='mx-auto'>
-      <Link href={target} className={`w-[200px] h-[44px] flex items-center ${active ? 'bg-[#8B59A9]' : ''}`}>
+      <Link href={target} className={`w-[200px] h-[44px] flex items-center ${active ? 'bg-custom-pink' : ''}`}>
         <div className='ml-4 mr-3'>
           <Image
             src={`/sidebar/${target}.png`}

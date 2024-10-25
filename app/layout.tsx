@@ -4,6 +4,7 @@ import './globals.css';
 
 import SideBar from '@/components/sidebar';
 import TopBar from '@/components/TopBar';
+import Footer from '@/components/Footer';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -36,11 +37,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className='max-w-[1440px] mx-auto bg-main-gradient flex'>
+        <div className='max-w-[1440px] mx-auto bg-background-gradient flex'>
           <SideBar />
           <div className='w-full pl-[24px] pt-[22px] pr-[35px] flex flex-col'>
             <TopBar />
-            {children}
+            <div className='mt-[35px] mb-[50px]'>
+              {children}
+            </div>
+            <Footer />
           </div>
         </div>
       </body>
