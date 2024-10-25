@@ -5,8 +5,8 @@ import MenuItem from './MenuItem';
 
 const SideBar = () => {
   return (
-    <div className='max-w-[216px] w-full h-[826px] flex flex-col bg-main-gradient border-r border-r-[#DCDEE033]'>
-      <div className='h-[154px] flex items-center justify-center'>
+    <div className='max-w-52 w-full h-screen flex flex-col bg-custom-background border-r border-gray-600'>
+      <div className='h-40 flex items-center justify-center'>
         <Link href='/'>
           <Image
             src='/logo.png'
@@ -17,7 +17,7 @@ const SideBar = () => {
         </Link>
       </div>
 
-      <div className='border-t border-t-[#DCDEE033] flex flex-col space-y-2'>
+      <div className='border-t border-gray-600 flex flex-col space-y-2'>
         <MenuItem target='discover' caption='Discover' />
         <MenuItem target='tokens' caption='Tokens' />
         <MenuItem target='dapps' caption='DApps' />
@@ -25,7 +25,7 @@ const SideBar = () => {
         <MenuItem target='portfolio' caption='Portfolio' />
       </div>
 
-      <div className='border-t border-t-[#DCDEE033] flex flex-col mt-auto mb-4'>
+      <div className='border-t border-gray-600 flex flex-col mt-auto mb-4'>
         <MenuItem target='events' caption='Events' />
         <MenuItem target='help' caption='Need help?' />
       </div>

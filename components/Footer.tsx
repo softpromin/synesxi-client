@@ -2,14 +2,15 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <div className='border-t border-[#31353f] flex flex-col mb-[56px]'>
-      <div className='flex justify-between mx-[91.5px] mt-[142px] h-[233px]'>
-        <div className='text-[#858585] flex flex-col mt-[84px]'>
+    <div className='border-t border-gray-700 flex flex-col'>
+      <div className='flex justify-between px-24 mt-36'>
+        <div className='text-custom-gray flex flex-col mt-20'>
           <div>Your Gateway to a better and seamless</div>
           <div>Web3 Experience</div>
         </div>
-        <div className='w-[147px] flex flex-col space-y-3'>
-          <div className='text-[#9E9E9E]'>
+
+        <div className='flex flex-col space-y-3 mr-20'>
+          <div className='text-custom-gray'>
             Resources
           </div>
           <div>About Us</div>
@@ -17,8 +18,10 @@ const Footer = () => {
           <div>Contact</div>
         </div>
       </div>
-      <div className='flex justify-between mx-[123.5px] mt-[11px] border-t border-[#31353f] pt-[33px] text-[#9E9E9E]'>
-        <div>© 2024 Synesxi</div>
+
+      <div className='flex justify-between mt-20 mx-32 pt-8 pb-12 border-t border-gray-700'>
+        <div className='text-custom-gray'>© 2024 Synesxi</div>
+
         <div className='flex space-x-6'>
           <Image
             src='/social/twitter.png'
