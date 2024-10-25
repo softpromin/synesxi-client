@@ -12,6 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'main-gradient': 'linear-gradient(95.43deg, #1F1F24 0.45%, #1B1B24 99.61%)',
+      },
     },
   },
   plugins: [],
