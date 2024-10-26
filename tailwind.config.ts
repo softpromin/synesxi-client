@@ -15,6 +15,8 @@ const config: Config = {
         'card-item': '#1C1E22',
         'custom-pink': '#8B59A9',
         'custom-gray': '#9E9E9E',
+        'custom-orange': '#F46D22',
+        'custom-green': '#1ECB4F',
       },
       backgroundImage: {
         'custom-background': 'linear-gradient(95.43deg, #1F1F24 0.45%, #1B1B24 99.61%)',
