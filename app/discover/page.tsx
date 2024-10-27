@@ -1,3 +1,4 @@
+import Carousel from "@/components/discover/Carousel";
 import Recommends from "@/components/discover/Recommends";
 import TopCharts from "@/components/discover/TopCharts";
 import NewArrivals from "@/components/discover/NewArrivals";
@@ -11,6 +12,7 @@ export default function Discover() {
           <div className='text-4xl'>Discover</div>
           <div className='text-custom-gray'>Experience more in the decentralized web</div>
         </div>
+        <Carousel />
         <Recommends />
         <TopCharts />
       </div>

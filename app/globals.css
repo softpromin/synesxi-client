@@ -19,3 +19,35 @@ body {
   background: var(--background);
   font-family: 'Nunito', Arial, sans-serif;
 }
+
+.carousel-container {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+.mySwiper .swiper-slide {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mySwiper .swiper-slide-active {
+  transform: scale(1.1); /* Enlarge the active slide */
+}
+
+.item-card {
+  width: 180px;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white;
+  opacity: 1;
+}
