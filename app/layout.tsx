@@ -20,18 +20,24 @@ export default function RootLayout({
     if (modals.includes(pathname)) {
       return (
         <div className='w-full h-screen flex items-center justify-center bg-gradient-to-bl from-[#242051] to-[#11151c]'>
+          <SideBar />
           {children}
         </div>
       );
     } else {
       return (
-        <div className='w-full p-6 flex flex-col'>
-          <TopBar />
-          <div className='mt-9 mb-12'>
-            {children}
+        <>
+          <div className='max-w-52 w-full h-screen'>
+            <SideBar />
           </div>
-          <Footer />
-        </div>
+          <div className='w-full p-6 flex flex-col'>
+            <TopBar />
+            <div className='mt-9 mb-12'>
+              {children}
+            </div>
+            <Footer />
+          </div>
+        </>
       );
     }
   };
@@ -46,7 +52,6 @@ export default function RootLayout({
       </head>
       <body>
         <div className='max-w-[1440px] mx-auto bg-custom-background flex'>
-          <SideBar />
           {getContent()}
         </div>
       </body>
