@@ -3,14 +3,10 @@ import Overview from "@/components/tokens-dapps/item/Overview";
 import Chart from "@/components/tokens-dapps/item/Chart";
 import TransactionTable from "@/components/tokens-dapps/item/TransactionTable";
 import Analytics from "@/components/tokens-dapps/Analytics";
+import AboutToken from "@/components/tokens-dapps/item/About";
+import LPAnalytics from "@/components/tokens-dapps/item/LPAnalytics";
 
-interface TokenPageProps {
-    params: { id: string };
-}
-
-const TokenPage = async ({ params }: TokenPageProps) => {
-    const { id } = await params;
-
+const TokenPage = () => {
     return (
         <div className="flex flex-col space-y-6 h-full">
             <div className="flex flex-col space-y-6 bg-card-body pb-6">
@@ -40,6 +36,10 @@ const TokenPage = async ({ params }: TokenPageProps) => {
                     <Analytics />
                 </div>
             </div>
+
+            <AboutToken />
+
+            <LPAnalytics />
         </div>
     );
 };

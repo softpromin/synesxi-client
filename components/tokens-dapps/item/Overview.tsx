@@ -32,7 +32,7 @@ export default function Overview() {
                 </div>
                 <h3 className="text-lg font-bold text-white">Tether Token</h3>
                 <p className="text-gray-500 text-sm">
-                    App description in 3 rows maximum. Then it goes to "…"
+                    App description in 3 rows maximum. Then it goes to &quot;…&quot;
                 </p>
                 <div className="flex space-x-2">
                     <span className="bg-gray-700 px-3 py-1 rounded text-gray-300 text-xs">Holders: 40000</span>
