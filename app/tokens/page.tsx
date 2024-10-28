@@ -1,7 +1,7 @@
 import TopBar from "@/components/TopBar";
-import Cards from "@/components/tokens-dapps/Cards";
-import Table from "@/components/tokens-dapps/Table";
-import Analytics from "@/components/tokens-dapps/Analytics";
+import Cards from "@/components/tokens/Cards";
+import TokenTable from "@/components/tokens/TokenTable";
+import Analytics from "@/components/tokens/Analytics";
 
 export default function Tokens() {
   return (
@@ -28,7 +28,7 @@ export default function Tokens() {
 
       <div className="flex space-x-3">
         <div className="flex-grow">
-          <Table />
+          <TokenTable />
         </div>
 
         <div className="w-44">

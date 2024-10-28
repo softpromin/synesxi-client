@@ -1,11 +1,11 @@
 import TopBar from "@/components/TopBar";
-import Overview from "@/components/tokens-dapps/item/Overview";
-import Chart from "@/components/tokens-dapps/item/Chart";
-import TransactionTable from "@/components/tokens-dapps/item/TransactionTable";
-import Analytics from "@/components/tokens-dapps/Analytics";
-import AboutToken from "@/components/tokens-dapps/item/About";
-import LPAnalytics from "@/components/tokens-dapps/item/LPAnalytics";
-import SimilarTokens from "@/components/tokens-dapps/item/SimilarTokens";
+import Overview from "@/components/tokens/token/Overview";
+import Chart from "@/components/tokens/token/Chart";
+import TransactionTable from "@/components/tokens/token/TransactionTable";
+import Analytics from "@/components/tokens/Analytics";
+import About from "@/components/tokens/token/About";
+import LPAnalytics from "@/components/tokens/token/LPAnalytics";
+import SimilarTokens from "@/components/tokens/token/SimilarTokens";
 
 const TokenPage = () => {
     return (
@@ -38,7 +38,7 @@ const TokenPage = () => {
                 </div>
             </div>
 
-            <AboutToken />
+            <About />
             <LPAnalytics />
             <SimilarTokens />
         </div>

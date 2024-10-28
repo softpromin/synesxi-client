@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { ChevronUpIcon } from '@heroicons/react/24/outline';
 
-export default function Table() {
+export default function DAppTable() {
     const [activeTab, setActiveTab] = useState('Newly Listed');
     const data = [
         { rank: 1, name: 'Tether', marketCap: '$3.560M', price: '$3.00', change: '+12.00%', volume: '$65.20M', chart: '/chart.svg' },
@@ -20,7 +21,9 @@ export default function Table() {
 
     return (
         <div className="bg-card-body rounded-md px-6 pt-12 pb-20">
-            <div className="flex space-x-4 mt-1">
+            <div className='text-2xl ml-4'>All DApps</div>
+
+            <div className="flex space-x-4 mt-6">
                 {tabs.map((tab) => (
                     <button
                         key={tab}
@@ -32,41 +35,41 @@ export default function Table() {
                 ))}
             </div>
 
-            <div className="overflow-x-auto mt-12">
+            <div className="overflow-x-auto mt-4">
                 <table className="min-w-full text-sm text-left">
                     <thead className="text-xs text-custom-gray border-t border-b border-gray-600">
                         <tr>
-                            <th className="px-4 py-4 text-center">Coin</th>
+                            <th className="px-4 py-4 text-center">Name</th>
                             <th className="px-4 py-4">
                                 <button className="flex items-center space-x-1">
-                                    <span>Market Cap</span>
-                                    <span className="text-xs">⌃</span>
+                                    <span>Balance</span>
+                                    <ChevronUpIcon className='w-3' />
                                     <span>ⓘ</span>
                                 </button>
                             </th>
                             <th className="px-4 py-4">
                                 <button className="flex items-center space-x-1">
-                                    <span>Coin Price</span>
-                                    <span className="text-xs">⌃</span>
+                                    <span>UAW</span>
+                                    <ChevronUpIcon className='w-3' />
                                     <span>ⓘ</span>
                                 </button>
                             </th>
                             <th className="px-4 py-4">
                                 <button className="flex items-center space-x-1">
-                                    <span>Change</span>
-                                    <span className="text-xs">⌃</span>
+                                    <span>UAW%</span>
+                                    <ChevronUpIcon className='w-3' />
                                     <span>ⓘ</span>
                                 </button>
                             </th>
                             <th className="px-4 py-4">
                                 <button className="flex items-center space-x-1">
                                     <span>24h Volume</span>
-                                    <span className="text-xs">⌃</span>
+                                    <ChevronUpIcon className='w-3' />
                                     <span>ⓘ</span>
                                 </button>
                             </th>
-                            <th className="px-4 py-4">Chart</th>
-                            <th className="px-4 py-4">Actions</th>
+                            <th className="px-4 py-4">24h UAW Chart</th>
+                            <th className="px-4 py-4"></th>
                         </tr>
                     </thead>
                     <tbody>

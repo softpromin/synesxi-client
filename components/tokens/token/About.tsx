@@ -1,6 +1,6 @@
 'use client';
 
-const AboutToken = () => {
+const About = () => {
     return (
         <div className="bg-card-body p-8 rounded-lg text-white space-y-6">
             <h2 className="text-2xl font-semibold">About Token</h2>
@@ -57,4 +57,4 @@ const AboutToken = () => {
     );
 }
 
-export default AboutToken;
+export default About;

@@ -41,13 +41,13 @@ export default function TopItems() {
     };
 
     return (
-        <div>
+        <div className="h-full">
             <div className="flex space-x-3">
                 {getButton(isGainers, 'Top Gainers', () => setIsGainers(true))}
                 {getButton(!isGainers, 'Top Losers', () => setIsGainers(false))}
             </div>
 
-            <div className="flex flex-col mt-4 space-y-2">
+            <div className="flex flex-col mt-4 space-y-2 pb-3">
                 {(isGainers ? topGainers : topLosers).map((item, index) => <TopItem key={index} rank={index + 1} id={item.id} name={item.name} usd={item.usd} change={item.change} />)}
             </div>
         </div>

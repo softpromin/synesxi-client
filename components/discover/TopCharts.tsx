@@ -13,7 +13,7 @@ export default function TopCharts() {
     ];
 
     return (
-        <div className='bg-card-body rounded-md px-3 py-6 flex flex-col space-y-3'>
+        <div className='bg-card-body rounded-md px-3 py-6 flex flex-col space-y-3 h-full'>
             <div className='flex justify-between items-center'>
                 <div className="text-2xl">Top Charts</div>
                 <div className='w-20 h-7 bg-card-item flex items-center justify-center'>
