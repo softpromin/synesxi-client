@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const TopBar = () => {
   return (
-    <div className='bg-card-body rounded-md w-full h-28 px-4 pt-6 pb-1 flex items-center justify-between'>
+    <div className='w-full h-28 px-4 pt-6 pb-1 flex items-center justify-between'>
       <div className='w-1/2 pb-3 flex border-b border-gray-600'>
         <Image
           src='/search.png'

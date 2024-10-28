@@ -11,13 +11,13 @@ interface ItemProps {
 
 const TopItem: React.FC<ItemProps> = ({ rank, id, name, usd, change }) => {
   return (
-    <Link href={`/token/${id}`}>
+    <Link href={`/tokens/${id}`}>
       <div className='flex justify-between items-center px-6 py-3 border border-gray-600 rounded cursor-pointer hover:border-white'>
         <div className='flex'>
           <div className='flex items-center'>
             <div>#{rank}</div>
             <Image
-              src={`/token/${id}.png`}
+              src={`/tokens/${id}.png`}
               alt={id}
               width={44}
               height={44}

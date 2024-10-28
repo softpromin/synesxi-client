@@ -8,10 +8,10 @@ interface ItemProps {
 
 const RecommendItem: React.FC<ItemProps> = ({ id, name }) => {
     return (
-        <Link href={`/dapp/${id}`}>
+        <Link href={`/dapps/${id}`}>
             <div className='flex flex-col space-y-1 justify-center items-center bg-card-item rounded-md p-2 border border-card-item hover:border-white'>
                 <Image
-                    src={`/dapp/${id}.png`}
+                    src={`/dapps/${id}.png`}
                     alt={id}
                     width={140}
                     height={101}

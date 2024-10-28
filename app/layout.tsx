@@ -5,7 +5,6 @@ import './globals.css';
 import { usePathname } from 'next/navigation';
 
 import SideBar from '@/components/sidebar';
-import TopBar from '@/components/TopBar';
 import Footer from '@/components/Footer';
 
 export default function RootLayout({
@@ -30,9 +29,8 @@ export default function RootLayout({
           <div className='max-w-52 w-full h-screen'>
             <SideBar />
           </div>
-          <div className='w-full p-6 flex flex-col'>
-            <TopBar />
-            <div className='mt-9 mb-12'>
+          <div className='w-full p-6 flex flex-col space-y-12'>
+            <div>
               {children}
             </div>
             <Footer />

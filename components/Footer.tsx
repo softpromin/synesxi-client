@@ -24,25 +24,25 @@ const Footer = () => {
 
         <div className='flex space-x-6'>
           <Image
-            src='/social/twitter.png'
+            src='/socials/twitter.png'
             alt='twitter'
             width={24}
             height={22.5}
           />
           <Image
-            src='/social/telegram.png'
+            src='/socials/telegram.png'
             alt='telegram'
             width={30.4}
             height={24}
           />
           <Image
-            src='/social/linkedin.png'
+            src='/socials/linkedin.png'
             alt='linkedin'
             width={24}
             height={24}
           />
           <Image
-            src='/social/medium.png'
+            src='/socials/medium.png'
             alt='medium'
             width={54}
             height={24}
