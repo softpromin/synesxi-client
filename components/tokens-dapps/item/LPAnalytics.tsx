@@ -14,6 +14,7 @@ import {
 
 import OverallPerformance from './Performance';
 import Security from './Security';
+import TokenReviews from './Reviews';
 
 ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, Title);
 
@@ -102,6 +103,7 @@ const LPAnalytics = () => {
 
             <OverallPerformance />
             <Security />
+            <TokenReviews />
         </div>
     );
 };

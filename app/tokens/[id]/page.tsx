@@ -38,7 +38,6 @@ const TokenPage = () => {
             </div>
 
             <AboutToken />
-
             <LPAnalytics />
         </div>
     );
