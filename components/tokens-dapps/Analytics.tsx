@@ -6,7 +6,7 @@ export default function Analytics() {
             <div className="w-fit bg-custom-gradient bg-clip-text text-transparent text-2xl font-semibold">Analytics</div>
 
             <div className="text-custom-gray mt-10">Greed Index</div>
-            <div className="bg-card-item rounded flex items-center justify-between px-1 py-2 mt-5">
+            <div className="bg-card-item rounded flex items-center justify-around px-1 py-2 mt-5">
                 <Image
                     src='/donut-chart.png'
                     alt='donut-chart'

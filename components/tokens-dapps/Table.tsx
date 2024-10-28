@@ -19,8 +19,8 @@ export default function Table() {
     const tabs = ['Newly Listed', 'Hot Tokens', 'Top Gainers', 'Top Losers', 'Fear Index'];
 
     return (
-        <div className="bg-card-body rounded-md px-6 space-y-9 pt-10 pb-20">
-            <div className="flex space-x-4 mb-4">
+        <div className="bg-card-body rounded-md px-6 pt-12 pb-20">
+            <div className="flex space-x-4 mt-1">
                 {tabs.map((tab) => (
                     <button
                         key={tab}
@@ -32,7 +32,7 @@ export default function Table() {
                 ))}
             </div>
 
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto mt-12">
                 <table className="min-w-full text-sm text-left">
                     <thead className="text-xs text-custom-gray border-t border-b border-gray-600">
                         <tr>
@@ -69,7 +69,6 @@ export default function Table() {
                             <th className="px-4 py-4">Actions</th>
                         </tr>
                     </thead>
-                    <div className='h-6' />
                     <tbody>
                         {data.map((token) => (
                             <tr key={token.rank} className="border-b border-gray-700 text-white">
@@ -104,7 +103,7 @@ export default function Table() {
                 </table>
             </div>
 
-            <div className="flex items-center text-gray-400 text-xs mt-4">
+            <div className="flex items-center text-gray-400 text-xs mt-12">
                 <div className='w-60'>Showing 1 to 10 of 4769 results</div>
                 <div className="w-full flex items-center justify-center space-x-2">
                     <button className="px-2 py-1 bg-gray-800 rounded text-gray-500">‹</button>

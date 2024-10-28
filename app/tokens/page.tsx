@@ -27,11 +27,13 @@ export default function Tokens() {
       </div>
 
       <div className="flex space-x-3">
-        <div className="w-full">
+        <div className="flex-grow">
           <Table />
         </div>
-        
-        <Analytics />
+
+        <div className="w-44">
+          <Analytics />
+        </div>
       </div>
     </div>
   );
