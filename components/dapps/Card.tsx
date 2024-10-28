@@ -18,7 +18,7 @@ const Card: React.FC<ItemProps> = ({ isToken, id, name, comment, price, change }
       <div className='flex justify-between'>
         <div className='flex items-center'>
           <Image
-            src={`${prefix + id}.png`}
+            src={`/tokens/solana.png`}
             alt={id}
             width={44}
             height={44}
