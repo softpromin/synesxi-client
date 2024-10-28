@@ -7,10 +7,21 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    router.push('/login');
+    // router.push('/login');
   }, []);
 
   return (
-    <>Home</>
+    <div className="flex space-x-4 h-full">
+                <div className="flex-grow">
+                    {/* <TransactionTable /> */}
+                    <p>1</p>
+                    <p>1</p>
+                    <p>1</p>
+                    <p>1</p>
+                </div>
+                <div className="w-44 h-full bg-white">
+                    {/* <Analytics /> */}
+                </div>
+            </div>
   );
 }

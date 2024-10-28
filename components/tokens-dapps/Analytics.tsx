@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Analytics() {
     return (
-        <div className="bg-card-body rounded-md px-4 py-10 flex flex-col">
+        <div className="h-full bg-card-body rounded-md px-4 py-10 flex flex-col">
             <div className="w-fit bg-custom-gradient bg-clip-text text-transparent text-2xl font-semibold">Analytics</div>
 
             <div className="text-custom-gray mt-10">Greed Index</div>
