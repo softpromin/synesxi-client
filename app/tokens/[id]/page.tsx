@@ -5,6 +5,7 @@ import TransactionTable from "@/components/tokens-dapps/item/TransactionTable";
 import Analytics from "@/components/tokens-dapps/Analytics";
 import AboutToken from "@/components/tokens-dapps/item/About";
 import LPAnalytics from "@/components/tokens-dapps/item/LPAnalytics";
+import SimilarTokens from "@/components/tokens-dapps/item/SimilarTokens";
 
 const TokenPage = () => {
     return (
@@ -39,6 +40,7 @@ const TokenPage = () => {
 
             <AboutToken />
             <LPAnalytics />
+            <SimilarTokens />
         </div>
     );
 };
