@@ -1,6 +1,7 @@
 import TopBar from "@/components/TopBar";
 import Cards from "@/components/tokens-dapps/Cards";
 import Table from "@/components/tokens-dapps/Table";
+import Analytics from "@/components/tokens-dapps/Analytics";
 
 export default function Tokens() {
   return (
@@ -25,10 +26,12 @@ export default function Tokens() {
         <div>Solana News Update</div>
       </div>
 
-      <div className="flex">
-        <div className="w-4/5">
+      <div className="flex space-x-3">
+        <div className="w-full">
           <Table />
         </div>
+        
+        <Analytics />
       </div>
     </div>
   );

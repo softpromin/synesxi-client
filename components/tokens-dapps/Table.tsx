@@ -5,7 +5,6 @@ import Image from 'next/image';
 
 export default function Table() {
     const [activeTab, setActiveTab] = useState('Newly Listed');
-    const [sortOrder, setSortOrder] = useState<'asc' | 'desc' | null>(null);
     const data = [
         { rank: 1, name: 'Tether', marketCap: '$3.560M', price: '$3.00', change: '+12.00%', volume: '$65.20M', chart: '/chart.svg' },
         { rank: 2, name: 'Radium', marketCap: '$3.560M', price: '$3.00', change: '+12.00%', volume: '$65.20M', chart: '/chart.svg' },
@@ -20,13 +19,13 @@ export default function Table() {
     const tabs = ['Newly Listed', 'Hot Tokens', 'Top Gainers', 'Top Losers', 'Fear Index'];
 
     return (
-        <div className="bg-gray-900 rounded-md p-6 space-y-6">
+        <div className="bg-card-body rounded-md px-6 space-y-9 pt-10 pb-20">
             <div className="flex space-x-4 mb-4">
                 {tabs.map((tab) => (
                     <button
                         key={tab}
                         onClick={() => setActiveTab(tab)}
-                        className={`px-4 py-2 rounded ${activeTab === tab ? 'bg-black text-white' : 'bg-gray-800 text-gray-400'}`}
+                        className={`px-4 py-2 rounded ${activeTab === tab ? 'bg-black text-white' : 'bg-card-item text-custom-gray'}`}
                     >
                         {tab}
                     </button>
@@ -34,48 +33,55 @@ export default function Table() {
             </div>
 
             <div className="overflow-x-auto">
-                <table className="min-w-full text-sm text-left text-gray-400">
-                    <thead className="bg-gray-800 text-xs uppercase text-gray-500">
+                <table className="min-w-full text-sm text-left">
+                    <thead className="text-xs text-custom-gray border-t border-b border-gray-600">
                         <tr>
-                            <th className="px-4 py-2 text-center">Coin</th>
-                            <th className="px-4 py-2">
+                            <th className="px-4 py-4 text-center">Coin</th>
+                            <th className="px-4 py-4">
                                 <button className="flex items-center space-x-1">
                                     <span>Market Cap</span>
                                     <span className="text-xs">⌃</span>
                                     <span>ⓘ</span>
                                 </button>
                             </th>
-                            <th className="px-4 py-2">
+                            <th className="px-4 py-4">
                                 <button className="flex items-center space-x-1">
                                     <span>Coin Price</span>
                                     <span className="text-xs">⌃</span>
                                     <span>ⓘ</span>
                                 </button>
                             </th>
-                            <th className="px-4 py-2">
+                            <th className="px-4 py-4">
                                 <button className="flex items-center space-x-1">
                                     <span>Change</span>
                                     <span className="text-xs">⌃</span>
                                     <span>ⓘ</span>
                                 </button>
                             </th>
-                            <th className="px-4 py-2">
+                            <th className="px-4 py-4">
                                 <button className="flex items-center space-x-1">
                                     <span>24h Volume</span>
                                     <span className="text-xs">⌃</span>
                                     <span>ⓘ</span>
                                 </button>
                             </th>
-                            <th className="px-4 py-2">Chart</th>
-                            <th className="px-4 py-2">Actions</th>
+                            <th className="px-4 py-4">Chart</th>
+                            <th className="px-4 py-4">Actions</th>
                         </tr>
                     </thead>
+                    <div className='h-6' />
                     <tbody>
                         {data.map((token) => (
-                            <tr key={token.rank} className="border-b border-gray-800">
-                                <td className="px-4 py-3 flex items-center space-x-2">
-                                    <span className="text-gray-500">{token.rank}</span>
-                                    <span>{token.name}</span>
+                            <tr key={token.rank} className="border-b border-gray-700 text-white">
+                                <td className="px-4 py-3 flex items-center">
+                                    <Image
+                                        src='/favorite.png'
+                                        alt='favorite'
+                                        width={22}
+                                        height={22}
+                                    />
+                                    <span className="text-gray-500 ml-3">{token.rank}</span>
+                                    <span className='ml-6'>{token.name}</span>
                                 </td>
                                 <td className="px-4 py-3">{token.marketCap}</td>
                                 <td className="px-4 py-3">{token.price}</td>
@@ -90,7 +96,7 @@ export default function Table() {
                                     />
                                 </td>
                                 <td className="px-4 py-3 text-right">
-                                    <button className="text-gray-400 hover:text-white">⋮</button>
+                                    <button>…</button>
                                 </td>
                             </tr>
                         ))}
