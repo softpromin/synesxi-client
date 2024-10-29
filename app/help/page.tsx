@@ -7,7 +7,7 @@ import TopBar from "@/components/TopBar";
 
 export default function Help() {
     const [searchQuery, setSearchQuery] = useState('');
-    const [expandedIndex, setExpandedIndex] = useState(null);
+    const [expandedIndex, setExpandedIndex] = useState(0);
     const [isFocused, setIsFocused] = useState(false);
 
     const faqs = [
@@ -23,8 +23,8 @@ export default function Help() {
         faq.question.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
-    const toggleExpand = (index: any) => {
-        setExpandedIndex(expandedIndex === index ? null : index);
+    const toggleExpand = (index: number) => {
+        setExpandedIndex(expandedIndex === index ? 0 : index);
     };
 
     return (

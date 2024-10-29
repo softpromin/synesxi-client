@@ -1,11 +1,9 @@
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
 import { ChevronUpIcon } from '@heroicons/react/24/outline';
 
 export default function Table() {
-    const [activeTab, setActiveTab] = useState('Newly Listed');
     const data = [
         { rank: 1, name: 'Tether', marketCap: '$3.560M', price: '$3.00', change: '+12.00%', volume: '$65.20M', chart: '/chart.svg' },
         { rank: 2, name: 'Radium', marketCap: '$3.560M', price: '$3.00', change: '+12.00%', volume: '$65.20M', chart: '/chart.svg' },
