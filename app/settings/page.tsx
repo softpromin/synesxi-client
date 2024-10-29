@@ -10,7 +10,7 @@ import { BsToggleOff, BsToggleOn } from "react-icons/bs";
 
 import TopBar from "@/components/TopBar";
 
-export default function Login() {
+export default function Settings() {
 	const [activeTab, setActiveTab] = useState('Profile');
 
 	const tabs = ['Profile', 'Notifications', 'Security', 'Appearance', 'Other'];
